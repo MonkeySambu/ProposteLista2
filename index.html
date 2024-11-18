@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <h2>RAPPRESENTANTI D'ISTITUTO</h2>
+            <H1>LISTA II</H1>
+            <H2>"Che la forza sia con noi"</H2>
+        </div>
+        <div>
+            <h3>-- LE NOSTRE PROPOSTE --</h3>
+            <ul>
+                <li>Rinnovare l’atrio della sede principale aggiungendo tavoli e sedie a disposizione degli studenti per le pause pranzo</li>
+                <li>Reinserire distrubitori d’acqua per riempire le borraccie</li>
+                <li>Assorbenti gratuiti (quantità limitata) pagati dalla scuola nei bagni delle ragazze</li>
+                <li>Reinserire gli attacca panni nelle aule</li>
+                <li>Una stanza sorvegliata con un microonde, piasta panini, per gli intervalli/pause pranzo</li>
+                <li>Aumentare la collaborazione tra classi tramite progetti pensati dagli studenti stessi</li>
+                <li>Aumentare la pausa pranzo al venerdì (5 minuti)</li>
+                <li>Possibilità per le classi IPSIA di stare in aula durante la pausa pranzo o un’aula disponibile agli studenti</li>
+                <li> Uso di una Community dedicata all’ITI</li>
+                <li>Creazione di una Band dell’ITI</li>
+                <li>Assemblee di Istituto con più interventi esterni di vario genere</li>
+            </ul>
+        </div>
+        <section>
+            <h3>--CANDIDATI--</h3>
+            <div class="parent">
+                <span>Fabio Cavazzini -5G<br>
+                    fabio.cavazzini@iticopernico.it
+                </span>
+
+                <span>Samuele Marinelli -5X<br>
+                    samuele.marinelli@iticopernico.it
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="back-to-top"></button>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+</script>
+</html>
